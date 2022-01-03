@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	
+	int i,yasi,sayi;
+	i=0;
+	char adi[10],soyadi[10],cinsiyeti[10];
+	
+	printf("***********ogrenci bilgi sistemi***********\n\n");
+	printf("Kac ogrenci girilecegini belirtiniz --> "); scanf("%d",&sayi);
+	
+	for(i=1;i<=sayi;i++){
+		
+		printf("%d.Ogrencinin adi --> ",i); scanf("%s",&adi);
+	
+		printf("%d.Ogrencinin soyadi --> ",i); scanf("%s",&soyadi);
+		
+		printf("%d.Ogrencinin yasi --> ",i); scanf("%s",&yasi);
+		
+		printf("%d.Ogrencinin cinsiyeti --> ",i); scanf("%s",&cinsiyeti);
+			printf("\n");
+		
+	}
+	
+
+	
+	
+	
+	return 0;
+}
