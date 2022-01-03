@@ -5,7 +5,6 @@
 int main() {
 	
 	int i,yasi,sayi;
-	i=0;
 	char adi[10],soyadi[10],cinsiyeti[10];
 	
 	printf("***********ogrenci bilgi sistemi***********\n\n");
@@ -23,9 +22,6 @@ int main() {
 			printf("\n");
 		
 	}
-	
-
-	
 	
 	
 	return 0;
