@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	
+	int s3,bagaj,elbagaj;
+	s3=350;
+
+	printf("*****TASINACAK YUK UCRETLENDIRMESI*****\n\n");
+	printf("Normal bagaj agirligini giriniz --> "); scanf("%d",&bagaj);
+	printf("El bagaji agirligini giriniz --> "); scanf("%d",&elbagaj);
+
+	
+	if (bagaj>0 && elbagaj>0){
+		
+		
+		if (bagaj<=15 && elbagaj<=8){
+			printf("Odemeniz gereken tutar %d TL.",s3);
+			}
+		
+		if (elbagaj>8 && bagaj<=15){
+			elbagaj=(elbagaj-8)*5;
+			printf("Odemeniz gereken tutar %d TL.",s3+elbagaj);
+		}
+		
+		if (elbagaj<=8 && bagaj>15){
+			bagaj=(bagaj-15)*5;
+			printf("Odemeniz gereken tutar %d TL.",s3+bagaj);
+		}
+		
+		if (elbagaj>8 && bagaj>15){
+		 	elbagaj=(elbagaj-8)*5;
+		 	bagaj=(bagaj-15)*5;
+		 	printf("Odemeniz gereken tutar %d TL",s3+elbagaj+bagaj);
+}
+		}
+	
+
+	else{
+			printf("Lutfen gecerli sayilar giriniz.");
+}
+	return 0;
+}
